@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color: #fafaf8;
+	}
+	.navigasi{
+		background-color: white;
+		width: 100%;
+		height: 66px;
+		display: flex;
+	}
+	.jne{
+		width: 90px;
+		height: 90px;
+		margin-top: -10px;
+		margin-left: 110px;
+	}
+	.beranda{
+		margin-top: 13px;
+		margin-left: 500px;
+		height: 40px;
+		width: 80px;
+		background-color: #1a75ff;
+		border: none;
+		border-radius: 25px;
+	}
+	.beranda:hover{
+		background-color: #4d4dff;
+		cursor: pointer;
+	}
+	span{
+		color: white;
+		font-size: 14.5px;
+		font-family: "arial";
+		margin-top: 24px;
+		letter-spacing: 0.3px;
+		font-weight: bold;
+	}
+	.formulir{
+		margin: 15px 100px 15px 100px;
+		background-color: white;
+		padding: 13px;
+	}
+	.formulir h3{
+		font-family: "arial";
+	}
+	.tabel{
+		margin-top: 7px;
+		border-collapse: collapse;
+	}
+	.tabel td{
+		font-family: "arial";
+		font-size: 17px;
+		border: 1px solid #deded3;
+		padding: 7px;
+		width: 1150px;
+	}
+	input{
+		width: 70.5%;
+		height: 35px;
+		font-size: 17px;
+		border: 1px solid #deded3;
+		border-radius: 5px;
+		padding-left: 10px
+	}
+	.TambahPenerima, .kembali, .simpan{
+		color: white;
+		border: none;
+		height: 33px;
+		font-size: 13.5px;
+		font-weight: bold;
+		cursor: pointer;
+		border-radius: 3px;
+	}
+	.TambahPenerima{
+		margin-top: 10px;
+		background-color: green;
+		width: 150px;
+	}
+	.TambahPenerima:hover{
+		background-color: #006600;
+	}
+	.kembali{
+		margin-left: 917px;
+		background-color: #666666;
+		width: 100px;
+	}
+	.kembali:hover{
+		background-color: #4d4d4d;
+	}
+	.simpan{
+		background-color: #1a66ff;
+		width: 100px;
+	}
+	.simpan:hover{
+		background-color: #004de6;
+	}
+	.footer{
+		width: 95.6%;
+		background-color: #ebebe0;
+		padding: 30px;
+	}
+	.footer h2, .deskripsi, .copyright{
+		text-align: center;
+		font-family: "arial";
+	}
+	.garis-vertikal{
+		border-top: 1px solid #b8b894;
+		margin-top: 7px;
+	}
+	.deskripsi{
+		margin-top: 9px;
+		margin-bottom: 50px;
+		line-height: 20px;
+		font-size: 13px;
+	}
+	.footer ul{
+		display: flex;
+		list-style-type: none;
+	}
+	.footer ul li{
+		margin-right: 20px;
+		margin-top: 9px;
+		margin-bottom: 10px;
+	}
+	.footer ul li a{
+		text-decoration: none;
+		color: #a2a2a2;
+		font-size: 15px;
+		font-family: "arial";
+	}
+	.copyright{
+		margin-top: 9px;
+		color: #a2a2a2;
+		font-size: 14px;
+	}
+</style>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Pickup Barang</title>
+</head>
+<body>
+	<nav class="navigasi">
+		<img class="jne" src="Picsart_22-10-22_20-14-50-630.png">
+		<button class="beranda">
+			<span>Home</span>	
+		</button>
+		
+	</nav>
+
+	<div class="formulir">
+		<h3>Formulir Pickup Barang</h3>
+		<table class="tabel">
+			<tr><td style="font-weight: bold">Pengirim</td></tr>
+			<tr style = "height: 70px">
+				<td>
+					Nama Pengirim
+				    <input type="text" placeholder="Nama Pengirim" style="margin-left: 190px;">
+			    </td>
+		    </tr>
+		    <tr style = "height: 70px">
+		    	<td>
+		    		No Whatsapp Pengirim
+		    		<input type="text" placeholder="No Whatsapp Pengirim" style="margin-left: 132px;">
+		    	</td>
+		    </tr>
+		    <tr>
+		    	<td>
+		    		Alamat Pengirim
+		    		<input type="text" placeholder="Alamat Pengirim" style="margin-top: 8px;margin-left: 182px;">
+		    		<p style="margin: 10px 0px 0px 313px">Kode Pos</p>
+		    		<input type="text" placeholder="Kode Pos" style="margin: 10px 0px 10px 312px;">
+		    	</td>
+		    </tr>
+		</table>
+
+		<table class="tabel">
+			<tr><td style="font-weight: bold">Penerima</td></tr>
+			<tr style = "height: 70px">
+				<td>
+					Nama Penerima
+				    <input type="text" placeholder="Nama Penerima" style="margin-left: 184px;">
+			    </td>
+		    </tr>
+		    <tr style = "height: 70px">
+		    	<td>
+		    		No Whatsapp Penerima
+		    		<input type="text" placeholder="No Whatsapp Penerima" style="margin-left: 126px;">
+		    	</td>
+		    </tr>
+		    <tr>
+		    	<td>
+		    		Alamat Penerima
+		    		<input type="text" placeholder="Alamat Penerima" style="margin-top: 8px; margin-left: 176px;">
+		    		<p style="margin: 10px 0px 0px 313px">Kode Pos</p>
+		    		<input type="text" placeholder="Kode Pos" style="margin: 10px 0px 10px 312px;">
+		    	</td>
+		    </tr>
+		    <tr>
+				<td>
+					Nama Barang
+				    <input type="text" placeholder="Nama Barang" style="margin-left: 202px;">
+			    </td>
+		    </tr>
+		    <tr>
+				<td>
+					Jumlah Barang 
+				    <input type="text" placeholder="Jumlah Barang" style="margin-left: 193px;">
+			    </td>
+		    </tr>
+		    <tr>
+				<td>
+					Berat Barang (kg)
+				    <input type="text" placeholder="Berat Barang" style="margin-left: 172px;">
+			    </td>
+		    </tr>
+		    <tr style = "height: 70px">
+				<td>
+					Layanan
+				    <input type="text" placeholder="Layanan" style="margin-left: 241px;">
+			    </td>
+		    </tr>
+		</table>
+
+		<button class="TambahPenerima">
+			+ Tambah Penerima
+		</button>
+
+		<br>
+
+		<button class="kembali">
+			Kembali
+		</button>
+
+		<button class="simpan">
+			Simpan
+		</button>
+	</div>
+
+	<div class="footer">
+		<h2>About Us</h2>
+		<div class="garis-vertikal"></div>
+		<p class="deskripsi">JNE merupakan perusahaan yang bergerak dalam bidang pengirim dan logistik yang bermarkas di Jakarta, Indonesia.
+		   Nama resminya adalah Tiki Jalur Nugraha Ekakurir (Tiki JNE). Pada JNE ini, kami memiliki fitur special yaitu, 
+		   dapat memesan kurir untuk menjemput barangnya supaya tidak repot-repot datang ke cabang terdekat</p>
+		<ul>
+			<li style="margin-left: 555px"><a href="#">Home</a></li>
+			<li><a href="#">Features</a></li>
+			<li><a href="#">About</a></li>
+		</ul>
+		<div class="garis-vertikal"></div>
+		<p class="copyright">&copy; 2022 Company, Inc</p>
+	</div>
+</body>
+</html>

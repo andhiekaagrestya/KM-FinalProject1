@@ -1,0 +1,148 @@
+    /* *{
+		margin: 0;
+		padding: 0;
+        scr
+	} */
+
+	/* body{
+		background-color: white;
+	} */
+
+	/* .navigasi{
+		background-color: white;
+		width: 100%;
+		height: 66px;
+		display: flex;
+	} */
+
+	/* .jne{
+		width: 75px;
+		height: 65px;
+		margin-top: -0px;
+		margin-left: 110px;
+	} */
+
+	/* .beranda{
+		margin-top: 20px;
+		margin-left: 500px;
+		height: 30px;
+		width: 100px;
+		background-color: #1a75ff;
+		border: none;
+		border-radius: 25px;
+
+	} */
+	/* .beranda:hover{
+		background-color: #4d4dff;
+		cursor: pointer;
+	} */
+
+	/* span{
+		color: white;
+		font-size: 14.5px;
+		font-family: "arial";
+		margin-top: 24px;
+		letter-spacing: 0.3px;
+		font-weight: bold;
+	} */
+	.formulir{
+		margin: 15px 100px 15px 100px;
+		background-color: white;
+		padding: 13px;
+	}
+	.formulir h3{
+		font-family: "arial";
+	}
+	.tabel{
+		margin-top: 7px;
+		border-collapse: collapse;
+	}
+	.tabel td{
+		font-family: "arial";
+		font-size: 17px;
+		border: 1px solid #deded3;
+		padding: 7px;
+		width: 1150px;
+	}
+	input{
+		width: 70.5%;
+		height: 35px;
+		font-size: 17px;
+		border: 1px solid #deded3;
+		border-radius: 5px;
+		padding-left: 10px
+	}
+	.TambahPenerima, .kembali, .simpan{
+		color: white;
+		border: none;
+		height: 33px;
+		font-size: 13.5px;
+		font-weight: bold;
+		cursor: pointer;
+		border-radius: 3px;
+	}
+	.TambahPenerima{
+		margin-top: 10px;
+		background-color: green;
+		width: 150px;
+	}
+	.TambahPenerima:hover{
+		background-color: #006600;
+	}
+	.kembali{
+		margin-left: 917px;
+		background-color: #666666;
+		width: 100px;
+	}
+	.kembali:hover{
+		background-color: #4d4d4d;
+	}
+	.simpan{
+		background-color: #1a66ff;
+		width: 100px;
+	}
+	.simpan:hover{
+		background-color: #004de6;
+	}
+	/* .footer{
+		width: 96,5%;
+		background-color: #ebebe0;
+		padding: 30px;
+	} */
+	/* .footer h2, .deskripsi, .copyright{
+		text-align: center;
+		font-family: "arial";
+	} */
+	.garis-vertikal{
+		border-top: 1px solid #b8b894;
+		margin-top: 7px;
+	}
+	.deskripsi{
+		margin-top: 9px;
+		margin-bottom: 50px;
+		line-height: 20px;
+		font-size: 13px;
+	}
+	/* .footer ul{
+		display: flex;
+		list-style-type: none;
+	} */
+	/* .footer ul li{
+		margin-right: 20px;
+		margin-top: 9px;
+		margin-bottom: 10px;
+	} */
+	/* .footer ul li a{
+		text-decoration: none;
+		color: #a2a2a2;
+		font-size: 15px;
+		font-family: "arial";
+	} */
+	/* .copyright{
+		margin-top: 9px;
+		color: #a2a2a2;
+		font-size: 14px;
+	} */
+    h2,p{
+        color: white;
+    }

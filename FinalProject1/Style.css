@@ -1,0 +1,125 @@
+
+.carousel-item img{
+  height: 689px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+}
+
+.formulir{
+  margin: 15px 100px 15px 100px;
+  background-color: white;
+  padding: 13px;
+}
+
+.formulir h3{
+  font-family: "arial";
+}
+
+.tabel{
+  margin-top: 7px;
+  border-collapse: collapse;
+}
+
+.tabel td{
+  font-family: "arial";
+  font-size: 17px;
+  border: 1px solid #deded3;
+  padding: 7px;
+  width: 1150px;
+}
+
+input{
+  width: 70.5%;
+  height: 35px;
+  font-size: 17px;
+  border: 1px solid #deded3;
+  border-radius: 5px;
+  padding-left: 10px
+}
+
+.TambahPenerima, .kembali, .simpan{
+  color: white;
+  border: none;
+  height: 33px;
+  font-size: 13.5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.TambahPenerima{
+  margin-top: 10px;
+  background-color: green;
+  width: 150px;
+}
+
+.TambahPenerima:hover{
+  background-color: #006600;
+}
+
+.kembali{
+  margin-left: 917px;
+  background-color: #666666;
+  width: 100px;
+}
+
+.kembali:hover{
+  background-color: #4d4d4d;
+}
+
+.simpan{
+  background-color: #1a66ff;
+  width: 100px;
+}
+
+.simpan:hover{
+  background-color: #004de6;
+}
+
+.garis-vertikal{
+  border-top: 1px solid #b8b894;
+  margin-top: 7px;
+}
+
+.deskripsi{
+  margin-top: 9px;
+  margin-bottom: 50px;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+h2,p, li{
+    color: white;
+}
+
+#logo{
+  margin-left: -70px;
+}
+
+.todos{
+  margin-right: -70px;
+}
+#icon1{
+  margin-left: 42.5%;
+  height: 90px;
+  width: 70px;
+}
+#icon2{
+  margin-left: 39%;
+  margin-bottom: -10px;
+  height: 100px; 
+  width: 100px;
+}
+#icon3{
+  margin-top: 30px;
+  margin-left: 44.5%;
+  margin-bottom: 12.5px;
+  height: 50px; 
+  width: 50px;
+}
+

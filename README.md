@@ -11,4 +11,4 @@ Ekakurir (Tiki JNE). Pada JNE ini kami memiliki fitur special yaitu, dapat memes
 2. Aldo Vierisyah
 3. William Soeparman
 
-DEMO Website Kami - [Jasa Ekspedisi (JNE)](https://razpanel.netlify.app/)
+DEMO Website Kami - [Jasa Ekspedisi (JNE)]([https://razpanel.netlify.app/](https://jne-clone.netlify.app/))

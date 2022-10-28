@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="Bootstrap/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="Style.css"/>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <title>Homepage</title>
+
+        <!-- Icon -->
+        <link rel="icon" href="Img/icon.png"/>
+    </head>
+
+    <body>
+        <!--Header nav-->
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="Img/icon.png"
+                        alt="Logo"
+                        width="75"
+                        height="30"
+                        class="d-inline-block align-text-top"/>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">
+                                <i class="fas fa-fw fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#contact">
+                                <i class="fas fa-fw fa-user"></i>Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#tentang">
+                                <i class="fas fa-fw fa-book"></i>About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#bio">
+                                <i class="fas fa-fw fa-portrait"></i>Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#blog">
+                                <i class="fas fa-fw fa-blog"></i>Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav ml-auto todos">
+                        <a
+                            class="nav-item nav-link text-white btn btn-danger rounded-pill px-3 mx-2 my-1 page-scroll"
+                            href="form.html">
+                            <i class="fas fa-fw fa-shipping-fast"></i>
+                            <sup>
+                                <i class="fas fa-1x fa-plus"></i>
+                            </sup>
+                            Buat Pesanan</a >
+                        <a
+                            class="nav-item nav-link text-white btn btn-success rounded-pill px-3 mx-2 my-1 page-scroll"
+                            href="#cek_status_pesanan">
+                            <i class="fas fa-fw fa-check"></i>
+                            Cek Status Pesanan</a >
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--Slide Gambar-->
+
+        <section id="carousel" class="carousel pb-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button
+                        type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/j1.png" class="d-block w-auto mx-auto" alt="..."/>
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/j2.jpg" class="d-block w-100" alt="..."/>
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/j3.jpg" class="d-block w-auto mx-auto" alt="..."/>
+                                <div class="carousel-caption d-none d-md-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cek Status Resi -->
+        <section
+            id="cek_status_pesanan"
+            class="cek_status_pesanan bg-primary text-white"
+            style="--bs-bg-opacity: 0.8">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg-12 text-center">
+                        <h2>Cek Status Pesanan</h2>
+                        <hr/>
+                        <form action="" method="get">
+                            <div class="form-group">
+                                <label for="no_resi">No. Resi (15 digit)</label>
+                                <input
+                                    style="font-size: 25px; text-align: center"
+                                    type="text"
+                                    name="no_resi"
+                                    class="form-control"
+                                    id="form-resi"
+                                    required="required"
+                                    value=""
+                                    maxlength="15"
+                                    minlength="15"/>
+                            </div>
+                            <button type="button" onclick="getData()" class="btn btn-primary">
+                                <i class="fas fa-fw fa-search"></i>
+                                Lacak
+                            </button>
+                        </form>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Receipt Form -->
+        <section id="section-name" style="display: none">
+            <div class="row">
+                <div
+                    class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3 rounded border"
+                    style="width: 89%; margin-left: 80px">
+                    <table class="table border-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">No Resi</th>
+                                <th>:</th>
+                                <td id="noresi"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nama Pengirim</th>
+                                <td>:</td>
+                                <td id="senderName"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Whatsapp Pengirim</th>
+                                <td>:</td>
+                                <td id="senderNumber"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Alamat Pengirim</th>
+                                <td>:</td>
+                                <td id="senderAddress"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nama Barang</th>
+                                <td>:</td>
+                                <td id="thingsName"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Berat Barang (Kg)</th>
+                                <td>:</td>
+                                <td id="weight"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Jumlah Barang</th>
+                                <td>:</td>
+                                <td id="total"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Nama Penerima</th>
+                                <td>:</td>
+                                <td id="receiverName"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">No. Whatsapp Penerima</th>
+                                <td>:</td>
+                                <td id="receiverNumber"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col">Alamat Penerima</th>
+                                <td>:</td>
+                                <td id="receiverAddress"></td>
+                            </tr>
+                        </thead>
+                        <thead>
+                            <tr>
+                                <th scope="col" style="tab-size: 8">Layanan Paket (Same / Next Day)</th>
+                                <td>:</td>
+                                <td id="service"></td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <div class="container-fluid text-center pt-5 pb-5" id="bio">
+            <h2 class="display-3 text-black">Portofolio</h2>
+            <div class="row pt-4 gx-4 gy-4">
+                <div class="col-md-4 text-center tim">
+                    <a href="mailto:aldovierisyah1st@gmail.com?subject = Feedback&body = Message">
+                        <img src="Img/avt-aldo.png"/>
+                    </a>
+                    <h4>Aldo Vierisyah</h4>
+                    <p class="text-black">Front-End Developer</p>
+                </div>
+                <div class="col-md-4 text-center tim">
+                    <a href="mailto:andhiekaagrestya@gmail.com?subject = Feedback&body = Message">
+                        <img src="Img/avt-dika.png"/>
+                    </a>
+                    <h4>Andhieka Agrestya A</h4>
+                    <p class="text-black">Front-End Developer</p>
+                </div>
+                <div class="col-md-4 text-center tim">
+                    <a href="mailto:williamsoeparman@gmail.com?subject = Feedback&body = Message">
+                        <img src="Img/avt-willi.png"/>
+                    </a>
+                    <h4>William Soeparman</h4>
+                    <p class="text-black">Front-End Developer</p>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <!-- Blogger -->
+        <div class="container text-center pt-5 pb-5">
+            <div class="row pb-5 mb-4">
+                <h2 align="center" class="display-3 text-black" id="blog">Blog</h2>
+
+                <!-- Card-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="card rounded shadow-sm border-0 bg-light bg-opacity-100000">
+                        <div class="card-body p-4">
+                            <img src="Img/JNE2.jpg" alt="" class="img-fluid d-block mx-auto mb-3"/>
+                            <h5>
+                                <a href="#" class="text-dark stretched-link" style="text-decoration: none">Lowongan Pekerjaan</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="card rounded shadow-sm border-0 bg-light bg-opacity-100000">
+                        <div class="card-body p-4">
+                            <img src="Img/JNE2.webp" alt="" class="img-fluid d-block mx-auto mb-3"/>
+                            <h5>
+                                <a href="#" class="text-dark stretched-link" style="text-decoration: none">Kemitraan</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="card rounded shadow-sm border-0 bg-light bg-opacity-100000">
+                        <div class="card-body p-4">
+                            <img src="Img/P3.jpg" alt="" class="img-fluid d-block mx-auto mb-3"/>
+                            <h5>
+                                <a href="#" class="text-dark stretched-link" style="text-decoration: none">Produk & Layanan</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="card rounded shadow-sm border-0 bg-light bg-opacity-100000">
+                        <div class="card-body p-4">
+                            <img src="Img/jne i 2.png" alt="" class="img-fluid d-block mx-auto mb-3"/>
+                            <h5>
+                                <a href="#" class="text-dark stretched-link" style="text-decoration: none">Corporate</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us -->
+        <section id="tentang" class="tentang bg-light-blue bg-secondary">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg text-center px-5">
+                        <h2>About Us</h2>
+                        <hr/>
+                        <p>
+                            JNE merupakan perusahaan yang bergerak dalam bidang pengiriman dan logistik yang
+                            bermarkas di Jakarta, Indonesia. Nama resminya adalah Tiki Jalur Nugraha
+                            Ekakurir (Tiki JNE). Pada JNE ini kami memiliki fitur special yaitu, dapat
+                            memesan kurir untuk menjemput barangnya supaya tidak repot-repot datang ke
+                            cabang terdekat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact Us -->
+        <h2 align="center" class="display-3 text-black pb-2 pt-5" id="contact">Contact Us</h2>
+        <p class="text-black text-center text-muted pb-5">Couldn’t find the answer you were looking for? The CheekSquad is happy to help!</p>
+        <div class="card-group text-center">
+            <div class="card">
+                <img src="Img/article.jpg" id="icon1"/>
+                <div class="card-body">
+                    <h5 class="card-title text text-center">Article & Guides</h5>
+                    <p class="card-text text-black">100+ articles to get the information you need when you need it.</p>
+                    <a href="https://www.instagram.com/aldo_vierisyah/">
+                        <button type="button" class="btn btn-success">Success</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Img/contact.jpg" id="icon2"/>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Contact Support</h5>
+                    <p class="card-text text-black">Get in touch with our customer support team.</p>
+                    <a href="https://www.instagram.com/ryakid/">
+                        <button type="button" class="btn btn-success" style="margin-top: 24px">Success</button>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Img/workshop.png" id="icon3"/>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Workshops</h5>
+                    <p class="card-text text-black">You can learn a lot in an hour with our live workshops!</p>
+                    <a href="https://www.instagram.com/william_soeparman/">
+                        <button type="button" class="btn btn-success" style="margin-top: 21.5px">Success</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br/>
+
+        <!-- FOOTER -->
+        <div class="container-fluid border-top bg-light py-3 my-3">
+            <footer
+                class="container d-flex flex-wrap justify-content-between align-items-center">
+                <p class="col-md-4 mb-0 text-muted">
+                    Copryright &copy;
+                    <script src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    PTP Dev. Team, All Right Reserved
+                </p>
+                <a
+                    href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"></a>
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link px-2 text-muted">Develop by Kelompok 4</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+        <script
+            src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    </body>
+</html>

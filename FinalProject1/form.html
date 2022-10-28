@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="Bootstrap/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="Style.css"/>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <!-- Icon -->
+        <link rel="icon" href="Img/icon.png">
+
+        <title>Form Pickup Barang</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="Img/icon.png"
+                        alt="Logo"
+                        width="75"
+                        height="30"
+                        class="d-inline-block align-text-top"/>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" aria-current="page" href="index.html">
+                                <i class="fas fa-fw fa-home"></i>Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="formulir">
+            <h3>Formulir Pickup Barang</h3>
+            <table class="tabel">
+                <tr>
+                    <td style="font-weight: bold">Pengirim</td>
+                </tr>
+                <tr style="height: 70px">
+                    <td>
+                        Nama Pengirim
+                        <input
+                            id="namaPengirim"
+                            type="text"
+                            placeholder="Nama Pengirim"
+                            style="margin-left: 190px;">
+                    </td>
+                </tr>
+                <tr style="height: 70px">
+                    <td>
+                        No Whatsapp Pengirim
+                        <input
+                            id="nomorPengirim"
+                            type="text"
+                            placeholder="No Whatsapp Pengirim"
+                            style="margin-left: 132px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alamat Pengirim
+                        <input
+                            id="alamatPengirim"
+                            type="text"
+                            placeholder="Alamat Pengirim"
+                            style="margin-top: 8px;margin-left: 182px;">
+                        <p style="margin: 10px 0px 0px 313px; color: black;">Kode Pos</p>
+                        <input
+                            id="posPengirim"
+                            type="text"
+                            placeholder="Kode Pos"
+                            style="margin: 10px 0px 10px 312px;">
+                    </td>
+                </tr>
+            </table>
+            <table class="tabel">
+                <tr>
+                    <td style="font-weight: bold">Penerima</td>
+                </tr>
+                <tr style="height: 70px">
+                    <td>
+                        Nama Penerima
+                        <input
+                            id="namaPenerima"
+                            type="text"
+                            placeholder="Nama Penerima"
+                            style="margin-left: 184px;">
+                    </td>
+                </tr>
+                <tr style="height: 70px">
+                    <td>
+                        No Whatsapp Penerima
+                        <input
+                            id="nomorPenerima"
+                            type="text"
+                            placeholder="No Whatsapp Penerima"
+                            style="margin-left: 126px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alamat Penerima
+                        <input
+                            id="alamatPenerima"
+                            type="text"
+                            placeholder="Alamat Penerima"
+                            style="margin-top: 8px; margin-left: 176px;">
+                        <p style="margin: 10px 0px 0px 313px; color: black;">Kode Pos</p>
+                        <input
+                            id="posPenerima"
+                            type="text"
+                            placeholder="Kode Pos"
+                            style="margin: 10px 0px 10px 312px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nama Barang
+                        <input
+                            id="namaBarang"
+                            type="text"
+                            placeholder="Nama Barang"
+                            style="margin-left: 202px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Jumlah Barang
+                        <input
+                            id="jumlahBarang"
+                            type="text"
+                            placeholder="Jumlah Barang"
+                            style="margin-left: 193px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Berat Barang (kg)
+                        <input
+                            id="beratBarang"
+                            type="text"
+                            placeholder="Berat Barang"
+                            style="margin-left: 172px;">
+                    </td>
+                </tr>
+                <tr style="height: 70px">
+                    <td>
+                        Layanan (Same / Next Day)
+                        <input
+                            id="layanan"
+                            type="text"
+                            placeholder="Layanan"
+                            style="margin-left: 98px; width: 70.5%;">
+                    </td>
+                </tr>
+            </table>
+
+            <br>
+
+            <button class="kembali">
+                Kembali
+            </button>
+
+            <button class="simpan">
+                Simpan
+            </button>
+        </div>
+
+        <!-- About Us -->
+        <section id="tentang" class="tentang bg-light-bg bg-secondary">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-lg text-center px-5">
+                        <h2>About Us</h2>
+                        <hr>
+                        <p>JNE merupakan perusahaan yang bergerak dalam bidang pengiriman dan logistik
+                            yang bermarkas di Jakarta, Indonesia. Nama resminya adalah Tiki Jalur Nugraha
+                            Ekakurir (Tiki JNE). Pada JNE ini kami memiliki fitur special yaitu, dapat
+                            memesan kurir untuk menjemput barangnya supaya tidak repot-repot datang ke
+                            cabang terdekat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <p class="text-center text-muted">Copryright &copy;
+                    <script src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    PTP Dev. Team, All Right Reserved</p>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+        <script
+            src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    </body>
+</html>
